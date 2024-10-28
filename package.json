@@ -1,0 +1,88 @@
+{
+  "$schema": "https://www.raycast.com/schemas/extension.json",
+  "name": "gin",
+  "title": "gin",
+  "description": "gin",
+  "icon": "extension-icon.png",
+  "author": "ginmaique_dos_reis",
+  "categories": [
+    "Applications"
+  ],
+  "license": "MIT",
+  "commands": [
+    {
+      "name": "convert-uppercase",
+      "title": "convert-uppercase",
+      "description": "Transforma o texto em uppercase",
+      "mode": "no-view"
+    },
+    {
+      "name": "convert-lowercase",
+      "mode": "no-view",
+      "title": "convert-lowercase",
+      "description": "Transforma o texto em lowercase"
+    },
+    {
+      "name": "convert-camelcase",
+      "mode": "no-view",
+      "title": "convert-camelcase",
+      "description": "Transforma o texto em camelcase"
+    },
+    {
+      "name": "generate-email",
+      "mode": "no-view",
+      "title": "generate-email",
+      "description": "Gerador de email"
+    },
+    {
+      "name": "generate-name",
+      "mode": "no-view",
+      "title": "generate-name",
+      "description": "Gerador de nome"      
+    },
+    {
+      "name": "generate-cep",
+      "mode": "no-view",
+      "title": "generate-cep",
+      "description": "Gerador de cep"
+    },
+    {
+      "name": "generate-address",
+      "mode": "no-view",
+      "title": "generate-address",
+      "description": "Gerador de endereço"
+    },
+    {
+      "name": "generate-cpf",
+      "mode": "no-view",
+      "title": "generate-cpf",
+      "description": "Gerador de cpf"
+    },
+    {
+      "name": "generate-cnpj",
+      "mode": "no-view",
+      "title": "generate-cnpj",
+      "description": "Gerador de cnpj"
+    }
+  ],
+  "dependencies": {
+    "@raycast/api": "^1.84.3",
+    "@raycast/utils": "^1.17.0"
+  },
+  "devDependencies": {
+    "@raycast/eslint-config": "^1.0.11",
+    "@types/node": "20.8.10",
+    "@types/react": "18.3.3",
+    "eslint": "^8.57.0",
+    "prettier": "^3.3.3",
+    "typescript": "^5.4.5"
+  },
+  "scripts": {
+    "build": "ray build",
+    "dev": "ray develop",
+    "fix-lint": "ray lint --fix",
+    "lint": "ray lint",
+    "prepublishOnly": "echo \"\\n\\nIt seems like you are trying to publish the Raycast extension to npm.\\n\\nIf you did intend to publish it to npm, remove the \\`prepublishOnly\\` script and rerun \\`npm publish\\` again.\\nIf you wanted to publish it to the Raycast Store instead, use \\`npm run publish\\` instead.\\n\\n\" && exit 1",
+    "publish": "npx @raycast/api@latest publish"
+  }
+}
